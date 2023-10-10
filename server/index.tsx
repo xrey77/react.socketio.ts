@@ -7,7 +7,7 @@ import cors from 'cors';
 import {formatMessage} from './messages';
 import { userJoin, userJoinRoom, getCurrentUser } from './users';
 
-const port = 4001;
+const port = "WSS://react-socketio-ts-server.vercel.app";
 
 app.use(cors);
 
