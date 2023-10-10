@@ -7,7 +7,7 @@ import cors from 'cors';
 import {formatMessage} from './messages';
 import { userJoin, userJoinRoom, getCurrentUser } from './users';
 
-const port = "WSS://react-socketio-ts-server.vercel.app";
+const port = 3001;
 
 app.use(cors);
 
@@ -24,7 +24,7 @@ const httpServer = createServer(function(req: any, res: any) {
 
 const io = new Server(httpServer, {
  cors: {
-    origin: 'https://react-socketio-ts-client.vercel.app',
+    origin: 'http://localhost:3000',
     methods: ["GET", "POST"],
  },
 });
@@ -105,6 +105,8 @@ io.on("connection", (socket: any) => {
 
 });
 
-httpServer.listen(port, () => {
-    console.log(`SERVER IS RUNNING @ PORT : ${port}`);
-});
+httpServer.listen(port);
+
+// httpServer.listen(port, () => {
+//     console.log(`SERVER IS RUNNING @ PORT : ${port}`);
+// });

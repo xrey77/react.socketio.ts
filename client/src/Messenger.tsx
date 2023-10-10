@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {io} from "socket.io-client";
 import './App.css';
 import $ from 'jquery';
-// let URLS: any = process.env.NODE_ENV === 'production' ? undefined : 'https://react-socketio-ts-server.vercel.app:3001"';
 
-const socket = io("wss://react-socketio-ts-server.vercel.app");
+const socket = io("http://localhost:3001");
 
 export default function Messenger() {
   let username: any = sessionStorage.getItem('USERNAME');
