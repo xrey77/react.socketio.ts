@@ -1,0 +1,145 @@
+
+.card {
+  top: 30px;
+  height: 80%!important;
+}
+.xpointer {
+  cursor: pointer;
+}
+.btn-home {
+  background-color: blue;
+  color: white;
+  padding: 10px!important;
+  text-decoration: none;
+  border-radius: 10%;
+}
+.btnClose {
+  visibility: hidden;
+}
+.w100 {
+  position: relative;
+  max-width: 100%!important;
+  width: 100%!important;
+}
+
+input {
+  width: 80%!important;
+  float: right;
+}
+.btn-messenger {
+  float: right;
+  margin-right: 10px;
+  margin-top: -0px!important;
+}
+
+.message-box {
+  width: 100%!important;
+  height: 240px!important;
+  max-height: 240px!important;
+  background-color: white;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+#messageContent {
+  width: 100%!important;
+  height: 240px!important;
+  background-color: white;
+  margin-left: 3px;
+}
+.xput {
+  width: 100%!important;
+  margin-left: -20px!important;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.input-login {
+  width: 100%!important;
+}
+.row-2 {
+  margin-top: 10px;
+}
+
+.msgbox {
+  color: red;
+}
+
+#usersContent {
+  margin-left: -5px;
+  background-color: white;
+  border-radius: 5%!important;
+  max-width: 275px!important;
+  width: 275px!important;
+  height: 310px!important;    
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#xusers {
+  width: 275px!important;
+  max-height: 800px!important;
+  font-size: 10px;
+  columns: 3;
+  -webkit-columns: 3;    
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 991.98px) { 
+  #usersContent {
+    background-color: transparent;
+    max-width: 350px!important;
+    width: 350px!important;
+    max-height: 800px!important;
+    height: 190px!important;    
+    margin-bottom: 30px!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }  
+
+  #xusers {
+    width: 350px!important;
+    max-height: 800px!important;
+    font-size: 10px;
+    columns: 3;
+    -webkit-columns: 3;    
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    overflow-x: hidden;
+    }
+
+  input {
+    width: 88%!important;
+    margin-left: 40px;
+  }
+  .message-box {
+    margin-top: -20px;
+    width: 100%!important;
+    height: 220px!important;
+    max-height: 220px!important;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+    
+  #messageContent {
+    margin-top: 10px!important;
+    height: 210px!important;
+    max-height: 220px!important;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }    
+ }
+
+ul {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: bold;
+  padding: 0;  
+}
+
+
+.form-check-input {
+  width: 20px!important;
+}
